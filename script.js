@@ -8,5 +8,3 @@ darkModeToggle.addEventListener('change', function() {
     stylesheet.href = 'lightmode.css';
   }
 });
-
-console.log('RODOU!');

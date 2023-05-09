@@ -12,6 +12,16 @@
 
 </head>
 <body>
+    <script>
+    // Carrega a tela de carregamento
+    document.write('<iframe src="loading.html" style="position:fixed;top:0;left:0;width:100%;height:100%;border:none;"></iframe>');
+
+    // Aguarda alguns segundos antes de carregar o conteúdo do site
+    setTimeout(function() {
+      // Remove a tela de carregamento
+      document.querySelector('iframe').remove();
+    }, 4000);
+  </script>
     <header>
         <img class="logomarca" src="imagens/logo.png" alt="logomarca do portfólio">
         <div class="container">
