@@ -10,19 +10,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="imagens/fav.ico" type="image/x-icon">
     <title>Carlos Vieira</title>
+    <script>
+        // Carrega a tela de carregamento
+        document.write('<iframe src="loading.html" style="position:fixed;top:0;left:0;width:100%;height:100%;border:none;"></iframe>');
+    
+        // Aguarda alguns segundos antes de carregar o conteúdo do site
+        setTimeout(function() {
+          // Remove a tela de carregamento
+          document.querySelector('iframe').remove();
+        }, 4000);
+    </script>
 
 </head>
 <body>
-    <script>
-    // Carrega a tela de carregamento
-    document.write('<iframe src="loading.html" style="position:fixed;top:0;left:0;width:100%;height:100%;border:none;"></iframe>');
-
-    // Aguarda alguns segundos antes de carregar o conteúdo do site
-    setTimeout(function() {
-      // Remove a tela de carregamento
-      document.querySelector('iframe').remove();
-    }, 4000);
-  </script>
     <header>
         <img id="logomarca" class="logomarca" src="imagens/logo-preta.png" alt="logomarca do portfólio">
         <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
