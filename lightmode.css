@@ -1,0 +1,12 @@
+@charset "UTF-8";
+:root {
+    --background-color: #ff6600;
+    --text-color: #000000;
+    --body-color: #ffffff;
+  }
+
+header {
+    background-color: var(--background-color);
+}
+
+  
