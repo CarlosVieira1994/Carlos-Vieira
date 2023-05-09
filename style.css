@@ -6,17 +6,64 @@
 }
 
 header {
-   
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    font-size: 0.3em;
     font-family: 'Nunito', sans-serif;
     height: 30px;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
 }
   
 .logomarca {
     width: 40px;
     height: 40px; 
+}
+menu {
+    display: none;
+    position: fixed;
+    top: 70px;
+    width: 100vw;
+}
+#burguer {
+    cursor: pointer;
+    margin-left: 35px;
+}
+menu ul {
+    list-style-type: none;
+}
+menu a {    
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.container {
+    margin-right: 30px;
+}
+main {
+    width: 85vw;
+    height: 100%h;
+    margin: auto;
+}
+
+main p {
+    width: 80%;
+    padding: 30px;
+    text-align: center;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+  }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    
+}
+
+@media screen and (min-width: 992px) {
+    
 }

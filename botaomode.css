@@ -1,26 +1,9 @@
 @charset "UTC-8";
-  /* Apenas o container */
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-   
-  }
-  
   /* Aqui comença o Toggler On/Off */
   .toggle-wrapper {
     display: flex;
     align-items: center;
   }
-  
-  /* Texto que decidi adicionar como exemplo */
-  .toggle-wrapper .description {
-    margin-left: 0.75rem;
-    font-weight: bold;
-    letter-spacing: 0.1rem;
-    font-size: 0.70rem;
-  }
-  
   /* Esconde o checkbox */
   .switch > .hidden-toggle {
     display: none;
@@ -28,7 +11,7 @@
   
   /* Caixinha onde o botão desliza */
   .switch > .slider {
-    background: #e0e2db;
+    background: #ff6600;
     border: 0.05rem solid #bbb;
     cursor: pointer;
     border-radius: 1rem;
@@ -46,7 +29,7 @@
     position: absolute;
     width: 1.6rem;
     height: 1.6rem;
-    background: #ff6600;
+    background: #e0e2db;
     top: 0.2rem;
     left: 0.2rem;
     transition: all 300ms ease-in-out;
@@ -63,7 +46,7 @@
     transform: translate(0, -50%);
     font-size: 0.7rem;
     line-height: 0.7rem;
-    color: #444;
+    color: #000000;
     font-weight: bold;
     z-index: 1;
     transition: all 300ms ease-in-out;

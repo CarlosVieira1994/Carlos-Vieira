@@ -1,12 +1,35 @@
 @charset "UTF-8";
 :root {
     --background-color: #ff6600;
+    --background-color-light: #ff9148;
+    --background-color-dark: #823400;
     --text-color: #000000;
     --body-color: #ffffff;
+    --text-color-transparent: #00000080;
   }
 
 header {
     background-color: var(--background-color);
 }
+#burguer {
+  color: var(--text-color);
+}
+menu a {
+  background-color: var(--background-color);
+  border-top: 2px solid var(--text-color-transparent);
+  color: var(--text-color);
+}
+menu a:hover {
+  background-color: var(--background-color-light);
+}
+menu ul {
+  background-color: var(--background-color);
+}
+body {
+  background-color: var(--background-color-dark);
+}
+main {
+  background-color: var(--body-color);
+ }
 
-  
+ 
