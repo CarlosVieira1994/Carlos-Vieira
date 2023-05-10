@@ -1,18 +1,31 @@
+/*Regras e Import's*/
 @charset "UTC-8";
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*Reset*/
 * {
     margin: 0px;
-    padding: 0px;
+    padding: 0px;   
 }
-
+/*Animações*/
+@keyframes digitando {
+    from {
+      width: 0;
+    }
+    to {
+      width: 60%;
+    }
+  }
+/*Configurações Gerais da Página*/
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    font-family: 'Nunito', sans-serif;
     height: 30px;
     position: fixed;
+    font-family: 'Nunito', sans-serif;
     top: 0px;
     width: 100vw;
 }
@@ -45,16 +58,53 @@ menu a {
     margin-right: 30px;
 }
 main {
-    width: 85vw;
+    padding: 2em;
+    width: 80vw;
     height: 100%h;
     margin: auto;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    
+} 
+#section1 {
+
+    margin-top: 70px;
 }
 
-main p {
-    width: 80%;
-    padding: 30px;
-    text-align: center;
+.imagem-inicio {
+    margin-left: 10px;
 }
+
+.nome {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 2em;
+    font-weight: 1000;
+    white-space: nowrap;
+}
+
+#texto-digitado {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 1.25em;
+    font-weight: 1000;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: digitando 2s linear;
+    animation-delay: 1s;
+  }
+  #avatar {
+    float: right;
+    border: transparent thin solid;
+    margin: 0px 0px 5px 10px;
+    width: 35%;
+  }
+  .paragrafo-inicio {
+    margin-top: 20px;
+    font-size: 1em;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+  }
+
 
 body::-webkit-scrollbar {
     width: 0px;

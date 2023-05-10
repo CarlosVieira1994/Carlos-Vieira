@@ -32,4 +32,11 @@ main {
  background-color: var(--body-color);
  color: var(--text-color);
 }
+.nome {
+  background-image: linear-gradient(150deg, var(--background-color), var(--text-color));
+  -webkit-background-clip: text; 
+  -webkit-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
 

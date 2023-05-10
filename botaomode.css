@@ -52,6 +52,14 @@
     transition: all 300ms ease-in-out;
     content: "LIGHT";
   }
+  /*Imagens de dentro do botão*/
+  .solelua {
+    width: 90%;
+    height: 90%;
+    position: relative;
+    top: 0.1em;
+    left: 0.1em;
+  }
   
   /* Slider ON */
   .switch > .hidden-toggle:checked ~ .slider {
