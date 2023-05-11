@@ -41,5 +41,21 @@ document.querySelectorAll('.menu-button a').forEach(function(link) {
   });
 });
 
+// Faz o slider passar as imagens automaticamente
 
+let count = 1;
+document.getElementById("radio1").checked = true;
+
+setInterval( function() {
+  nextImage();
+}, 3000)
+
+function nextImage(){
+  count++;
+  if (count>4){
+    count = 1;
+  }
+
+  document.getElementById("radio"+count).checked = true;
+}
 
