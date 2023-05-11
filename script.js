@@ -9,12 +9,20 @@ darkModeToggle.addEventListener('change', function() {
     logomarca.src = 'imagens/logo.png';
     imgbt.src = 'imagens/lua.png';
     avatar.src = 'imagens/dark-avatar.png';
+    imgslider1.src = 'imagens/html-dark.png';
+    imgslider2.src = 'imagens/js-dark.png';
+    imgslider3.src = 'imagens/react-dark.png';
+    imgslider4.src = 'imagens/ps-dark.png';
 
   } else {
     stylesheet.href = 'lightmode.css';
     logomarca.src = 'imagens/logo-preta.png';
     imgbt.src = 'imagens/sol.png';
     avatar.src = 'imagens/light-avatar.png';
+    imgslider1.src = 'imagens/html-light.png';
+    imgslider2.src = 'imagens/js-light.png';
+    imgslider3.src = 'imagens/react-light.png';
+    imgslider4.src = 'imagens/ps-light.png';
   }
 });
 // Alterna o menu entre aparente ou não aparente.
