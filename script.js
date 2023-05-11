@@ -34,11 +34,12 @@ document.querySelectorAll('.menu-button a').forEach(function(link) {
     var targetElement = document.querySelector(target); // Obtém o elemento do destino
     var offset = targetElement.offsetTop; // Obtém a distância do elemento ao topo da página
     window.scrollTo({
-      top: offset -70,
+      top: offset -80,
       behavior: 'smooth' // Faz a rolagem suave
     });
     document.querySelector('.menu-button').style.display = 'none'; // Fecha o menu após clicar em um link
   });
 });
+
 
 
