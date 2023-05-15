@@ -93,7 +93,7 @@ main {
   #avatar {
     float: right;
     border: transparent thin solid;
-    margin: 0px 0px 15px 10px;
+    margin: 0px 0px 15px 0px;
     width: 80%;
 
   }
@@ -120,7 +120,7 @@ main {
     margin: 20px 0;
   }
 
-  /*-------------------- Estilo do Slider --------------------*/
+  /*-------------------- Estilo do Slider (habilidades) --------------------*/
 
   .slider {
     
@@ -193,14 +193,48 @@ main {
   }
   
 
-  /*-------------------- Fim do Estilo do Slider --------------------*/
+  /*-------------------- Fim do Estilo do Slider (habilidades) --------------------*/
+
+  /*-------------------- Estilo do Slider (projetos) --------------------*/
+  .slider-projetos {
+    
+    margin: o auto;
+    width: 250px;
+    height: 125px;
+    overflow: hidden;
+  }
+  .slides-projetos {
+    width: 400%;
+    height: 200px;
+    display: flex;
+  }
+  .slides-projetos input {
+    display: none;
+  }
+  .slide-projetos {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+  }
+  .slides-projetos img {
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  /*-------------------- Fim do Estilo do Slider (projetos) --------------------*/
   #softskills {
     margin-top: 20px;
+  }
+
+  .paragrafo-trajetoria {
+    
   }
 
 body::-webkit-scrollbar {
     width: 0px;
   }
+
+/*-------------------- Telas Maiores --------------------*/
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
