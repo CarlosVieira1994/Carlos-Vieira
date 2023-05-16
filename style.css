@@ -215,6 +215,18 @@ main {
     width: 40%;
     margin: 20px auto;
   }
+  footer {
+    height: 100px;
+  }
+  footer p {
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: bold;
+  }
+  .desenvolvido {
+    margin: 20px 0;
+    padding-top: 20px;
+  }
 
 
 body::-webkit-scrollbar {

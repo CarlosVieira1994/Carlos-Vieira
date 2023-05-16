@@ -60,4 +60,10 @@ main {
 #projetos img {
   border: 1px solid var(--text-color);
 }
+footer{
+  background-color: var(--background-color);
+}
+footer{
+  color: var(--text-color);
+}
 
