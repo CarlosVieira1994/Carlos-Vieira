@@ -13,6 +13,10 @@ darkModeToggle.addEventListener('change', function() {
     imgslider2.src = 'imagens/js-dark.png';
     imgslider3.src = 'imagens/react-dark.png';
     imgslider4.src = 'imagens/ps-dark.png';
+    trajetoriaimg1.src = 'imagens/menino-dark.png';
+    trajetoriaimg2.src = 'imagens/binario-dark.png';
+    trajetoriaimg3.src = 'imagens/subir-dark.png';
+    trajetoriaimg4.src = 'imagens/desenvolve-dark.png';
 
   } else {
     stylesheet.href = 'lightmode.css';
@@ -23,6 +27,10 @@ darkModeToggle.addEventListener('change', function() {
     imgslider2.src = 'imagens/js-light.png';
     imgslider3.src = 'imagens/react-light.png';
     imgslider4.src = 'imagens/ps-light.png';
+    trajetoriaimg1.src = 'imagens/menino-light.png';
+    trajetoriaimg2.src = 'imagens/binario-light.png';
+    trajetoriaimg3.src = 'imagens/subir-light.png';
+    trajetoriaimg4.src = 'imagens/desenvolve-light.png';
   }
 });
 // Alterna o menu entre aparente ou não aparente.

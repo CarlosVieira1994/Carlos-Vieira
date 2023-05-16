@@ -57,4 +57,7 @@ main {
 #radio4:checked ~ .navigation-auto .auto-btn4{
   background-color: var(--background-color);
 }
+#projetos img {
+  border: 1px solid var(--text-color);
+}
 

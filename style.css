@@ -60,15 +60,12 @@ main {
     
 } 
 #inicio {
-
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin-top: 70px;
 }
-.inicio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 .nome {
     font-family: 'Roboto', sans-serif;
     font-style: italic;
@@ -91,10 +88,8 @@ main {
     text-align: center;
   }
   #avatar {
-    float: right;
-    border: transparent thin solid;
-    margin: 0px 0px 15px 0px;
-    width: 80%;
+    
+    width: 100%;
 
   }
   .paragrafos {
@@ -195,40 +190,32 @@ main {
 
   /*-------------------- Fim do Estilo do Slider (habilidades) --------------------*/
 
-  /*-------------------- Estilo do Slider (projetos) --------------------*/
-  .slider-projetos {
-    
-    margin: o auto;
-    width: 250px;
-    height: 125px;
-    overflow: hidden;
-  }
-  .slides-projetos {
-    width: 400%;
-    height: 200px;
-    display: flex;
-  }
-  .slides-projetos input {
-    display: none;
-  }
-  .slide-projetos {
-    width: 25%;
-    position: relative;
-    transition: 2s;
-  }
-  .slides-projetos img {
-    width: 250px;
-    margin: 0 auto;
-  }
-
-  /*-------------------- Fim do Estilo do Slider (projetos) --------------------*/
   #softskills {
     margin-top: 20px;
   }
 
-  .paragrafo-trajetoria {
-    
+  #projetos img {
+    display: flex;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 15px;
   }
+  .paragrafo-img {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+  }
+  .trajetoria-img {
+    display: flex;
+    width: 60%;
+    margin: 20px auto;
+  }
+  .desenvolve-img {
+    display: flex;
+    width: 40%;
+    margin: 20px auto;
+  }
+
 
 body::-webkit-scrollbar {
     width: 0px;
@@ -237,10 +224,173 @@ body::-webkit-scrollbar {
 /*-------------------- Telas Maiores --------------------*/
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+  .nome {
+  text-align: left;
+  font-size: 6vw;
+  }
+  #texto-digitado{
+  text-align: left;
+  font-size: 3.7vw;
+  }
+  .inicio-img {
+    text-align: center;
+  }
+  #avatar {
+    width: 50%;
+  }
+  .paragrafos {
+    font-size: 1em;
+    width: 70%;
+    margin: auto;
+  }
+  #paragrafo-inicio {
+    margin-top: 20px;
+  }
+  #projetos img{
+    width: 60%;
+    margin: 20px auto;
+  }
+ 
+  .trajetoria-img {
+    width: 30%;
+    margin: 20px auto;
+  }
+  .desenvolve-img {
+    display: flex;
+    width: 25%;
+    margin: 20px auto;
+  }
+
 
 }
 @media screen and (min-width: 992px) {
+  #inicio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  
+  }
+  .inicio-nome {
+    width: 60%;
+  }
+  .inicio-img {
+    width: 40%;
+  }
+  .inicio-paragrafo{
+    width: 100%;
+  }
+  .nome {
+  text-align: left;
+  font-size: 6vw;
+  }
+  #texto-digitado{
+  text-align: left;
+  font-size: 3.7vw;
+  }
+  .inicio-img {
     
+  }
+  #avatar {
+  min-width: 300px;
+  }
+  .paragrafos {
+    font-size: 1.2em;
+    width: 70%;
+    margin: auto;
+  }
+  #paragrafo-inicio {
+    margin-top: 20px;
+  }
+
+  
+  /*-------------------- Estilo do Slider (habilidades) --------------------*/
+
+  .slider {
+    
+    margin: o auto;
+    width: 500px;
+    height: 250px;
+    overflow: hidden;
+  }
+  .slides {
+    width: 400%;
+    height: 500px;
+    display: flex;
+  }
+  .slides input {
+    display: none;
+  }
+  .slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+  }
+  .slides img {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .manual-navigation {
+    position: absolute;
+    width: 500px;
+    margin-top: -250px;
+    display: flex;
+    justify-content: center;
+  }
+  .manual-btn {
+    border-radius: 10px;
+    padding: 3px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .manual-btn:not(:last-child) {
+    margin-right: 10px;
+  }
+  #radio1:checked ~ .first {
+    margin: 0;
+  }
+  #radio2:checked ~ .first {
+    margin-left: -25%;
+  }
+  #radio3:checked ~ .first {
+    margin-left: -50%;
+  }
+  #radio4:checked ~ .first {
+    margin-left: -75%;
+  }
+  .navigation-auto div{
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .navigation-auto{
+    position: absolute;
+    width: 500px;
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+  }
+  .navigation-auto div:not(:last-child) {
+    margin-right: 10px;
+  }
+  /*-------------------- Fim do Estilo do Slider (habilidades) --------------------*/
+  
+  #projetos img{
+    width: 60%;
+    margin: 20px auto;
+  }
+ 
+  .trajetoria-img {
+    width: 30%;
+    margin: 20px auto;
+  }
+  .desenvolve-img {
+    display: flex;
+    width: 20%;
+    margin: 20px auto;
+  }
 }
 /*-------------------- Animações --------------------*/
 @keyframes digitando {
