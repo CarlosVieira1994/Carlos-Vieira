@@ -288,8 +288,8 @@ body::-webkit-scrollbar {
   text-align: left;
   font-size: 3.7vw;
   }
-  .inicio-img {
-    
+  .titulos {
+    font-size: 4em;
   }
   #avatar {
   min-width: 300px;
